@@ -11,6 +11,7 @@ from rich.table import Table
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s : %(message)s')
 
+# region Main function
 def main():
     pid = os.getpid()
     print(f'test: {pid}')
@@ -48,7 +49,7 @@ def main():
         overall_progress.update(overall_task, description=f"{overall_progress.columns[0]} - Finished") # not working at the moment
 
 
-# region Main
+# region Module entry point
 if __name__ == "__main__":
     logger.info('Started')
     main()
