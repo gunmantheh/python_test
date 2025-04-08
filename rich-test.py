@@ -47,6 +47,8 @@ def main():
             overall_progress.update(overall_task, advance=10)
         overall_progress.update(overall_task, description=f"{overall_progress.columns[0]} - Finished") # not working at the moment
 
+
+# region Main
 if __name__ == "__main__":
     logger.info('Started')
     main()
